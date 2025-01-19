@@ -1,0 +1,66 @@
+**Electricity Bill Calculation Project**
+
+This project aims to develop a program that calculates a customer's monthly bill for an electricity supply company. Electricity consumption will be calculated based on the difference between the latest reading and the previous reading, and the unit price will be determined according to the consumption range.
+
+---
+
+### **Problem**
+According to the electricity supply company's subscription agreement, the customer's monthly bill is calculated as follows:
+
+1. **electricity_consumption = new_reading - previous_reading**
+2. **unit_price** is determined based on electricity consumption.
+3. **monthly_bill = electricity_consumption * unit_price**
+
+| **Electricity Consumption (kWh)** | **Unit Price** |
+|------------------------------------|----------------|
+| 0 - 100                            | 1.1            |
+| 101 - 200                          | 1.3            |
+| 201 - 300                          | 1.5            |
+| 301 - 400                          | 1.7            |
+| 401 - 500                          | 1.9            |
+| 501 and above                      | 2.3            |
+
+---
+
+### **Analysis**
+The primary focus should be on calculating the customer's monthly bill. According to the company policy, the monthly bill is calculated as follows:
+
+1. **electricity_consumption = new_reading - previous_reading**
+2. **unit_price** is determined based on consumption:
+   - Consumption: 0 - 100 kWh → Unit Price: 1.1
+   - Consumption: 101 - 200 kWh → Unit Price: 1.3
+   - Consumption: 201 - 300 kWh → Unit Price: 1.5
+   - Consumption: 301 - 400 kWh → Unit Price: 1.7
+   - Consumption: 401 - 500 kWh → Unit Price: 1.9
+   - Consumption: 501 kWh and above → Unit Price: 2.3
+3. Calculate the **monthly_bill** as:
+   - **monthly_bill = electricity_consumption * unit_price**
+
+---
+
+### **Design**
+1. **Define variables**:
+   - `monthly_bill` (float)
+   - `electricity_consumption` (integer)
+   - `unit_price` (float)
+   - `new_reading` (integer)
+   - `previous_reading` (integer)
+
+2. **Take input from the user**:
+   - `new_reading` (integer)
+   - `previous_reading` (integer)
+
+3. **Calculate the monthly bill**:
+   - Calculate electricity consumption:
+     **electricity_consumption = new_reading - previous_reading**
+   - Determine the unit price based on electricity consumption:
+     - 0 - 100 kWh → Unit Price: 1.1
+     - 101 - 200 kWh → Unit Price: 1.3
+     - 201 - 300 kWh → Unit Price: 1.5
+     - 301 - 400 kWh → Unit Price: 1.7
+     - 401 - 500 kWh → Unit Price: 1.9
+     - 501 kWh and above → Unit Price: 2.3
+   - Calculate the monthly bill:
+     **monthly_bill = electricity_consumption * unit_price**
+
+4. **Display the monthly electricity bill** to the user.
