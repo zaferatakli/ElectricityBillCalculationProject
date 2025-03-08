@@ -1,2 +1,2 @@
-# ElectricityBillCalculationProject01Task03
+# ElectricityBillCalculationProject
  Electricity Bill Calculation
