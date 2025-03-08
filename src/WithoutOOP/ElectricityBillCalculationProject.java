@@ -1,4 +1,4 @@
-package task3.WithoutOOP;
+package task3.src.WithoutOOP;
 
 import java.util.Scanner;
 
